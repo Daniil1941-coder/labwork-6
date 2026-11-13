@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Student Portal – Marks Board</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1 id="welcome">Welcome</h1>
+    <p id="loadTime"></p>
+
+    <div class="controls">
+      <button type="button" id="backBtn">Back</button>
+
+      <label for="sortSelect">Sort by</label>
+      <select id="sortSelect" name="sortSelect">
+        <option value="name">Name A→Z</option>
+        <option value="marks">Marks, highest first</option>
+      </select>
+    </div>
+
+    <p id="message"></p>
+
+    <div class="table-wrap">
+      <table id="marksTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Marks</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody id="marksBody"></tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

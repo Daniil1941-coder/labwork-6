@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Student Portal – Register</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Student Registration</h1>
+
+    <form id="registerForm" novalidate>
+      <div class="field">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName" maxlength="25">
+        <small id="nameCounter">25 characters left out of 25</small>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+      </div>
+
+      <div class="field">
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+      </div>
+
+      <div class="field">
+        <label for="city">City</label>
+        <select id="city" name="city">
+          <option value="">-- choose a city --</option>
+          <option value="Tashkent">Tashkent</option>
+          <option value="Samarkand">Samarkand</option>
+          <option value="Bukhara">Bukhara</option>
+          <option value="Khiva">Khiva</option>
+          <option value="Namangan">Namangan</option>
+        </select>
+        <p id="cityChoice"></p>
+      </div>
+
+      <ul id="errors"></ul>
+
+      <button type="submit">Register</button>
+    </form>
+  </main>
+</body>
+</html>
